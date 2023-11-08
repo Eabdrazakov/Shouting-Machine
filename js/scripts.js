@@ -1,7 +1,14 @@
+let fontSize = 16;
+
 function setMadlids() {
     const textInput = document.getElementById("textInput").value;
+    const span = document.querySelector("span#result");
 
     document.querySelector("span#result").innerText = textInput.toUpperCase();
+
+    fontSize += 2;
+
+    span.style.fontSize = fontSize + "px";
 }
 
 function getMadtoForm() {
